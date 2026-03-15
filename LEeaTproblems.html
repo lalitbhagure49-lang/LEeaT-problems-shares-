@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Problem Share</title>
+</head>
+
+<body>
+
+<h1>Apni Problem Likho</h1>
+
+<input id="problem" placeholder="Yaha problem likho">
+
+<button onclick="addProblem()">Submit</button>
+
+<h2>Problems</h2>
+
+<div id="list"></div>
+
+<script>
+
+function addProblem(){
+
+let text=document.getElementById("problem").value
+
+let p=document.createElement("p")
+
+p.innerText=text
+
+document.getElementById("list").appendChild(p)
+
+}
+
+</script>
+
+</body>
+</htmlz>
